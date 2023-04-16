@@ -11,6 +11,7 @@ public class FibbonacciSeries {
             i=j;
             system.debug(i); 
             j=f;
+            system.debug(j); 
         }
     }
 }
