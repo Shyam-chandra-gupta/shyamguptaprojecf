@@ -9,7 +9,7 @@ public class FibbonacciSeries {
             f = i+j;
             system.debug(f);
             i=j;
-            system.debug(i);
+            system.debug(i); 
             j=f;
         }
     }
