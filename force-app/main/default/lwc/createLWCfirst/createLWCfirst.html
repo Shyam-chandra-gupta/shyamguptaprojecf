@@ -1,0 +1,25 @@
+<template>
+    <h1 class="shyamCss"> Hi This is my First LWC Component for the multiplying </h1>
+<div>
+    <h2 class="ShyamCss2"> CALCULATOR </h2>
+    <lightning-input type ="Number" name="putNum1" label="Enter the first number" onchange={getvalue}></lightning-input>
+    <lightning-input type ="Number" name ="putNum2" label="Enter the second number" onchange={getvalue}></lightning-input>    
+</div>
+<lightning-layout>
+    <lightning-layout-item>
+        <lightning-button class="ShyamCss3" variant="success" label ="Multiply" onclick={getMultiplication}></lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item>
+        <lightning-button class="ShyamCss4" variant="brand-outline" label ="divide" onclick={getDivision}></lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item>
+        <lightning-button class="ShyamCss5" variant="destructive" label ="Addition" onclick={getSumValue}></lightning-button>
+    </lightning-layout-item>
+    <lightning-layout-item>
+        <lightning-button class="ShyamCss6" variant="brand" label ="Substract" onclick={getSubstraction}></lightning-button>
+    </lightning-layout-item>
+</lightning-layout>
+<div>
+    Result : {result}
+</div>
+</template>
